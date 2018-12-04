@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Key\'s Stand</string>
+    <string name="goto_login">Sign In!</string>
+    <string name="goto_signup">Sign Up!</string>
+    <string name="create_account">Create Account</string>
+    <string name="add_password">Add</string>
+    <string name="logout">Logout</string>
+    <string name="feedback_string">Your Feedback is valuable for me!</string>
+    <string name="feedback">Feedback</string>
+    <string name="about_us">Designed And Develop By Roshan Paturkar</string>
+    <string name="about">About Us</string>
+    <string name="vewfeedback">View Feedback</string>
+    <string name="forget_password">Reset password!</string>
+    <string name="update">Check Update</string>
+    <string name="change_pin">Change PIN</string>
+</resources>

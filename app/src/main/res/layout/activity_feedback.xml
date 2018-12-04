@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/feedbackbg"
+    tools:context=".activities.FeedbackActivity">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/feedbackCardView"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/green"
+        app:cardCornerRadius="13dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_marginTop="20dp"
+                android:layout_width="150dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/feedback" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:text="@string/feedback_string"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="vertical"
+                android:paddingEnd="30dp"
+                android:paddingStart="50dp">
+
+                <EditText
+                    android:id="@+id/fullNameFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bg_edit_2"
+                    android:hint="Enter full name"
+                    android:inputType="textPersonName"
+                    android:padding="10dp"
+                    android:paddingBottom="2dp"
+                    android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/issueFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bg_edit_2"
+                    android:hint="Issue"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:paddingBottom="2dp"
+                    android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                    android:textSize="14sp" />
+
+                <EditText
+                    android:id="@+id/describtionFeedback"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/selector_bg_edit_2"
+                    android:hint="Describe"
+                    android:inputType="textMultiLine"
+                    android:padding="10dp"
+                    android:paddingBottom="2dp"
+                    android:textCursorDrawable="@drawable/bg_input_cursor_2"
+                    android:textSize="14sp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/subbmitButtonFeedback"
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bt_shape"
+                        android:text="Submit!"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</android.support.constraint.ConstraintLayout>
